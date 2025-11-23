@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Черепашки-Ниндзя: Последний Ронин</title>
+    <title>TMNT: The Last Ronin</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,20 +12,20 @@
             <div id="health-bar-container">
                 <div id="health-bar"></div>
             </div>
-            <div id="score">Счёт: 0</div>
+            <div id="score">Score: 0</div>
         </div>
-        <!-- Canvas больше не нужен, Three.js создаст свой -->
+        <!-- Canvas placeholder hidden because Three.js manages its own -->
         <div id="game-over" class="hidden">
-            <h1>ИГРА ОКОНЧЕНА</h1>
-            <p>Счёт: <span id="final-score">0</span></p>
-            <button id="restart-btn">ИГРАТЬ СНОВА</button>
+            <h1>GAME OVER</h1>
+            <p>Score: <span id="final-score">0</span></p>
+            <button id="restart-btn">PLAY AGAIN</button>
         </div>
         <div id="controls">
-            <p>🎮 Управление:</p>
-            <p>WASD / Стрелки - Движение</p>
-            <p>Мышка - Поворот камеры</p>
-            <p>ЛКМ / ПРОБЕЛ - Атака</p>
-            <p style="color: #ffaa00;">Кликни на экран для захвата мыши</p>
+            <p>🎮 Controls:</p>
+            <p>WASD / Arrows – Move</p>
+            <p>Mouse – Rotate camera</p>
+            <p>LMB / SPACE – Attack</p>
+            <p style="color: #ffaa00;">Click the screen to capture the mouse</p>
         </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
