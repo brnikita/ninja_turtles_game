@@ -31,9 +31,31 @@ A browser-based action game where you play as the Last Ronin, the lone surviving
 - Vanilla JavaScript
 - CSS3
 
+## 📂 Project Structure
+
+```
+src/
+├── core/           # scene/camera renderer, lighting, materials, collisions
+├── environment/    # city generation, props and landmarks
+├── entities/       # Player, Enemy, Boss classes
+├── systems/        # input, particles, combat, HUD helpers
+├── state/          # shared mutable game state
+└── main.js         # entry point bootstrapping the game loop
+```
+
 ## 🚀 Getting Started
 
-Open `index.html` in your browser—no build step or server required.
+Because the project uses ES modules, you need to serve it via HTTP (opening `index.html` with `file://` will trigger CORS errors).
+
+```bash
+# option 1: Node
+npx http-server -p 8080
+
+# option 2: Python
+python -m http.server 8080
+```
+
+Then open `http://localhost:8080/` in your browser.
 
 ## 🎯 Goal
 
